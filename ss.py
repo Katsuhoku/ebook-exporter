@@ -8,6 +8,7 @@ from os.path import isdir, isfile, join
 import eel
 import tkinter as tk
 from tkinter import filedialog
+from sys import exit
 
 WINDOW_WIDTH, WINDOW_HEIGHT = 600,800
 screenWidth, screenHeight = pyautogui.size()
