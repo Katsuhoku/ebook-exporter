@@ -67,39 +67,4 @@ $(document).ready(() => {
             infoField.append("<p class='text-danger'>Fill correctly all the fields and try again.</p>")
         }
     });
-    /*$("#show-topics").click(() => {
-        eel.show_topics(parseInt($("#topics-input").val()));
-    });
-
-    $("#query-button").click(() => {
-        $("#results").empty();
-        eel.query($("#query-input").val())((ranking) => {
-            var i = 0;
-            if (Object.keys(ranking).length == 0) {
-                $("#results").append( `
-                    <div class="col-12">
-                        <p class="text-danger">No se encontraron documentos relevantes...</p>
-                    </div>
-                ` );
-            }
-            else {
-                $("#results").append( `
-                    <div class="col-12">
-                        <p class="text-success">Se encontraron: ${Object.keys(ranking).length} documentos relevantes.</p>
-                    </div>
-                ` );
-                ranking.slice(0,10).forEach(element => {
-                    console.log(element);
-                    $("#results").append( `
-                        <div class="col-5">
-                            <h5>${++i}.- ${element[0]}</h5>
-                        </div>
-                        <div class="col-7">
-                            <p class="lead text-primary">Evaluation: ${parseFloat(element[1]).toFixed(4)}</p>
-                        </div>
-                    ` );
-                });
-            }
-        });
-    });*/
 });
